@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Roboto:400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,700");
+body {
+  font-family: "Raleway" ,sans-serif; }
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  transition: all 0.3 ease;
+  z-index: 3; }
+  nav.sticky {
+    background: #6b51a8;
+    background: linear-gradient(90deg, #6b51a8 0%, #a77bca 52%, #c08dd6 100%);
+    height: 5vh; }
+    nav.sticky ul a {
+      font-size: 18px; }
+  nav ul {
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+    margin: 0;
+    list-style-type: none;
+    height: inherit; }
+    nav ul a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 15vw;
+      height: inherit;
+      font-family: "montserrat" ,sans-serif;
+      font-size: 25px;
+      font-weight: 400;
+      color: white;
+      text-shadow: 0 0 5px black;
+      text-align: center;
+      transition: 0.3s color ease; }
+      nav ul a:hover {
+        color: black;
+        text-decoration: none; }
+      nav ul a li {
+        padding: 10px; }
+
+.start {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/photo-1482686115713-0fbcaced6e28.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center; }
+  .start .look {
+    margin: 0 auto;
+    display: flex;
+    width: 50vw;
+    height: 40vh;
+    background: black;
+    display: flex;
+    padding: 25px; }
+    .start .look h1 {
+      align-self: center;
+      text-transform: lowercase;
+      padding: 0;
+      margin: 0;
+      font-family: "montserrat" ,sans-serif;
+      font-size: 7vw;
+      line-height: 7vw;
+      font-weight: 700;
+      color: white; }
+  .start .mouse {
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    border: 3px solid white;
+    top: 80vh;
+    left: 50vw;
+    border-radius: 15px; }
+    .start .mouse a {
+      align-self: flex-end;
+      display: flex;
+      color: rgba(255, 255, 255, 0.38);
+      font-size: 10px;
+      width: 100px;
+      position: absolute;
+      width: 70px;
+      height: 60px;
+      top: 0;
+      left: -13px;
+      text-align: center;
+      z-index: 2; }
+      .start .mouse a p {
+        margin: 0;
+        align-self: flex-end; }
+    .start .mouse:after {
+      position: absolute;
+      content: '';
+      background: white;
+      height: 18px;
+      width: 18px;
+      border-radius: 18px;
+      top: 4px;
+      left: 3px;
+      transition: all 0.3s ease; }
+    .start .mouse:hover:after {
+      animation: mouse-anim 2s infinite; }
+
+.myself {
+  height: 100vh;
+  display: flex; }
+  .myself .container {
+    align-self: center; }
+
+.hobby .lang {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  position: relative; }
+  .hobby .lang .langs {
+    width: 30%;
+    font-size: 30px; }
+    .hobby .lang .langs .ex {
+      cursor: pointer; }
+      .hobby .lang .langs .ex i {
+        padding: 25px; }
+      .hobby .lang .langs .ex.active {
+        font-weight: 700; }
+        .hobby .lang .langs .ex.active .fa-html5, .hobby .lang .langs .ex.active .fa-css3, .hobby .lang .langs .ex.active .fa-js {
+          font-weight: 400; }
+        .hobby .lang .langs .ex.active .fa-html5 {
+          color: #e34f26; }
+        .hobby .lang .langs .ex.active .fa-css3 {
+          color: #5e77ad; }
+        .hobby .lang .langs .ex.active .fa-js {
+          color: #f7df1e;
+          text-shadow: 0 0 3px #000000; }
+  .hobby .lang .langs-desc {
+    width: 70%;
+    display: flex;
+    flex-direction: row; }
+    .hobby .lang .langs-desc .desc {
+      display: none; }
+      .hobby .lang .langs-desc .desc i {
+        font-size: 100px; }
+      .hobby .lang .langs-desc .desc.active {
+        display: block; }
+  .hobby .lang .source {
+    font-size: 11px;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+.hobby .next {
+  margin-top: 30px; }
+  .hobby .next .preproc, .hobby .next .framework {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 30px; }
+
+.future {
+  margin-top: 200px;
+  margin-bottom: 200px; }
+
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px 0; }
+
+.intro {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 40px; }
+  .intro p {
+    width: auto; }
+  .intro:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #6b51a8;
+    background: linear-gradient(270deg, #6b51a8 0%, #a77bca 52%, #c08dd6 100%); }
+
+.about {
+  font-size: 20px; }
+
+.sass, .less, .vue, .react, .angular {
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+  padding: 50px 50px 0px;
+  text-align: center; }
+  .sass:hover .fa-sass, .less:hover .fa-sass, .vue:hover .fa-sass, .react:hover .fa-sass, .angular:hover .fa-sass {
+    color: #c69; }
+  .sass:hover .fa-less, .less:hover .fa-less, .vue:hover .fa-less, .react:hover .fa-less, .angular:hover .fa-less {
+    color: #1d365d; }
+  .sass:hover .fa-vuejs, .less:hover .fa-vuejs, .vue:hover .fa-vuejs, .react:hover .fa-vuejs, .angular:hover .fa-vuejs {
+    color: #42b883; }
+  .sass:hover .fa-react, .less:hover .fa-react, .vue:hover .fa-react, .react:hover .fa-react, .angular:hover .fa-react {
+    color: #00d8ff; }
+  .sass:hover .fa-angular, .less:hover .fa-angular, .vue:hover .fa-angular, .react:hover .fa-angular, .angular:hover .fa-angular {
+    color: #b52e31; }
+  .sass:hover p, .less:hover p, .vue:hover p, .react:hover p, .angular:hover p {
+    opacity: 1; }
+  .sass p, .less p, .vue p, .react p, .angular p {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0;
+    margin: 0;
+    transition: all .5s ease;
+    font-weight: 500; }
+  .sass .fa-sass, .less .fa-sass, .vue .fa-sass, .react .fa-sass, .angular .fa-sass {
+    transition: all .3s ease; }
+  .sass .fa-less, .less .fa-less, .vue .fa-less, .react .fa-less, .angular .fa-less {
+    transition: all .3s ease; }
+  .sass .fa-vuejs, .less .fa-vuejs, .vue .fa-vuejs, .react .fa-vuejs, .angular .fa-vuejs {
+    transition: all .3s ease; }
+  .sass .fa-react, .less .fa-react, .vue .fa-react, .react .fa-react, .angular .fa-react {
+    transition: all .3s ease; }
+  .sass .fa-angular, .less .fa-angular, .vue .fa-angular, .react .fa-angular, .angular .fa-angular {
+    transition: all .3s ease; }
+
+@keyframes mouse-anim {
+  0% {
+    top: 4px; }
+  50% {
+    top: 22px; }
+  100% {
+    top: 4px; } }
+
+/*# sourceMappingURL=style.css.map */

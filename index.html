@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hobby</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+
+
+
+    <script src="js/smooth-scroll.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1250,
+            easing: 'easeInOutCubic',
+        });
+        $("html").easeScroll();
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <a href="#myself"><li>O mnie</li></a>
+            <a href="#hobby"><li>Moje hobby</li></a>
+            <a href="#future"><li>Przyszłość</li></a>
+        </ul>
+    </nav>
+    <div class="start">
+        <div class="container">
+            <div class="look">
+                <h1>web developing</h1>
+            </div>
+        </div>
+        <div class="mouse"><a href="#myself">
+                <p>kliknij mnie</p>
+            </a></div>
+    </div>
+    <div id="myself" class="myself">
+        <div class="container">
+            <div class="intro">
+                <p>Troche o mnie</p>
+            </div>
+            <div class="about">
+                <p>Nazywam sie Mateusz Izbicki i dzieki tej prezentacji przyblize Tobie moją pasje jaką jest webdeveloping. Pytanie jak zacząłem interesowac sie tym, odpowiedz jest najdzwyczaj prosta. Kazdy z nas codziennnie używa komputera i prawie zawsze korzystamy z przegladarki by wyszukac jakies informacje na ciekawy dla nas temat.</p>
+                <p>Pewnego razu szukając informacji potrzebnych mi do rozwiazania problemu natrafiłem na strone która bardzo mnie zaciekawiła i postanowiłem że dowiem sie jak takie rzeczy sie tworzy i może sam zaczne cos takiego robic.</p>
+                <p>Od tego mementu mineły już 4 lata a nadal dowiaduje sie czegos nowego i sie ucze coraz to nowszych technologi</p>
+            </div>
+        </div>
+    </div>
+    <div id="hobby" class="hobby">
+        <div class="container">
+            <div class="intro">
+                <p>Front-end</p>
+            </div>
+            <div class="about">
+                <p>Jak wczesniej wspomniałem ze moje hobby to webdeveloping, jednak jest to tak obszerny temat i tym co sie interesuje i ulepszam swoje mozliwosci to jest front-end. Jest to mozna powiedzieć "odłam" który zajmuje sie głównie wyglądem strony i jej interfejsem.</p>
+                <p>Głównymi jezykami których sa 3 należą:</p>
+            </div>
+            <div class="lang">
+                <div class="langs">
+                    <div data="html" class="ex active"><i class="fab  fa-html5"></i>HTML</div>
+                    <div data="css" class="ex"><i class="fab fa-css3"></i>CSS</div>
+                    <div data="js" class="ex"><i class="fab fa-js"></i>JavaScript</div>
+                </div>
+                <div class="langs-desc">
+                    <div data="html" class="desc active">
+                        <p>HTML (Hypertext Markup Language) jest to kod używany do tworzenia struktury strony i jej zawartości. Na przykład treść może być uporządkowana w obrębie zestawu akapitów, listy punktowanych punktów lub tabel obrazów i danych. Jak sugeruje tytuł, ten artykuł daje podstawy do zrozumienia HTML i jego funkcji.s</p>
+                        <p>HTML nie jest językiem programowania; jest językiem znaczników (ang. markup language). HTML składa się z serii znaczników (tagów), których używa się do zamknięcia, opakowania różnych części treści, tak aby wyglądały i/lub działały w określony sposób.</p>
+                    </div>
+                    <div data="css" class="desc">
+                        <p>Kaskadowe arkusze stylów (CSS) są językiem stylów używanym do opisania warstwy prezentacji dokumentów napisanych w HTML lub XML (włączając pochodne SVG czy XHTML). CSS opisuje jak elementy powinny być prezentowane na ekranie, przy wydruku, w czytniku ekranowym, albo w innych mediach</p>
+                        <p>CSS jest jednym z podstawowych języków otwartej sieci i jest ustandaryzowany pomiędzy przeglądarkami zgodnie ze specyfikacją W3C. Rozwijany stopniowo, CSS1 obecnie przestarzały , CSS2.1 rekomendowany, oraz CSS3, obecnie rozbity na mniejsze moduły w ciągłym procesie standaryzacji.</p>
+                    </div>
+                    <div data="js" class="desc">
+                        <p>JavaScript to język programowania, który umożliwia wdrożenie na stronie internetowej skomplikowanych elementów, dzięki którym strona ta może nie tylko wyświetlać statyczne informacje, ale również obsługiwać zmianę treść odpowiednio do sytuacji, wyświetlać interaktywne mapy i animacje grafiki 2D/3D , wyświetlać video itd. Jest to trzecia warstwa standardowych technologii internetowych.</p>
+                    </div>
+                </div>
+                <div class="source">Żródło: <a href="https://developer.mozilla.org">https://developer.mozilla.org</a></div>
+            </div>
+            <div class="next">
+                <p>Oczywiście wraz z rozwojem front-endu powstały rożne techonologi pisania w tych jezykach. Przykładami mogą byc preprocesory, które pozwalają nam pisac kaskadowe style o wiele wiele szybciej oraz nadaja temu jezykowi opisowemu troche elementów z progrmowania np. zasotosowanie pętli "for", czy możliwosc deklarowania zmiennych.</p>
+                <p>Najpopolarnieszymi preprocesorami sa:</p>
+                <div class="preproc">
+                    <div class="sass">
+                        <i class="fab  fa-sass"></i>
+                        <p>sass</p>
+                    </div>
+                    <div class="less">
+                        <i class="fab  fa-less"></i>
+                        <p>less</p>
+                    </div>
+                </div>
+                <p>Osobiście używam SASS'a, bo najczesciej jest uzywane we szelkiego rodzaju szablonach. Tego preprocesora róznież użyłem piszac tą strone <i class="far fa-smile-wink"></i></p>
+                <p>JavaScript natomiast zyskał przez ostatnie lata ogroną popolarność developerów, zatem technologi jest ogrom. W tym momencie najpolularniejszymi frameworkami (biblioteki rozszerzajace i ułątiwjące prace w Javascripcie) są:</p>
+                <div class="framework">
+                    <div class="vue">
+                        <i class="fab  fa-vuejs"></i>
+                        <p>vue</p>
+                    </div>
+                    <div class="react">
+                        <i class="fab  fa-react"></i>
+                        <p>react</p>
+                    </div>
+                    <div class="angular">
+                        <i class="fab  fa-angular"></i>
+                        <p>angular</p>
+                    </div>
+                </div>
+                <p>W tym momencie wolny czasie poświęcam sie na nauce pierwszego z nich, bo daje duzo moliwosc manipolowanie elementami stroy i tworzyc komponenty z którch można "skleic" całą strone internetową. </p>
+            </div>
+        </div>
+    </div>
+    <div id="future" class="future">
+        <div class="container">
+            <div class="intro">
+                <p>Czy to już nie hobby?</p>
+            </div>
+            <div class="about">
+                <p>Tworzenie stron jest dla mnie bardzo milą forma spedzania czasu wolengo. Cały czas przeglądam rózne fora internetowe w poszukiwaniu inspiracji oraz do poszerzania wiedzy na temat tej dziedziny. Poprzez takie działa ucze sie nowych rzeczy ale tez rozwijam kreatywnośc i wrażliwość na sztuke, bo strony internetowe to też dzieła sztuki <a href="http://okkapi.agency/en">(przykład)</a></p>
+                <p>W przyszłosći podjąłbym sie pracy webdevelopera, mysle ze moje hobby powoli bedzie stawało sie moją pracą.</p>
+            </div>
+        </div>
+    </div>
+    <footer> Wykonane przez: Mateusz Izbicki &copy;</footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/scroll.js"></script>
+</body>
+
+</html>
